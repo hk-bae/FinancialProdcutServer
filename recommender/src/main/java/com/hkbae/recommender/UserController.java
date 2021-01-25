@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/user/")
 public class UserController {
 
     @Autowired
@@ -20,6 +20,11 @@ public class UserController {
     @GetMapping("")
     public User getUser(@RequestParam("id") String id) {
         return userMapper.getUser(id);
+    }
+
+    @GetMapping("/exist")
+    public int getUserCount(@RequestParam("id") String id) {
+        return userMapper.getUserCount(id);
     }
 
     @PostMapping("")
