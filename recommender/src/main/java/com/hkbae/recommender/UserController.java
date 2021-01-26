@@ -27,6 +27,11 @@ public class UserController {
         return userMapper.getUserCount(id);
     }
 
+    @GetMapping("/login")
+    public User login(@RequestParam("id") String id, @RequestParam("password") String password) {
+        return userMapper.login(id, password);
+    }
+
     @PostMapping("")
     public int postUser(@RequestBody User user) {
         return userMapper.insertUser(user);

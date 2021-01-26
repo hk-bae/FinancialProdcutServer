@@ -14,8 +14,13 @@ public interface UserMapper {
     @Select("select * from User where id=#{id}")
     User getUser(@Param("id") String id);
 
+    // id를 통해 user가 존재하는지 조회
     @Select("select count(*) from User where id=#{id}")
     int getUserCount(@Param("id") String id);
+
+    // id,pw에 따른 User 가져오기
+    @Select("select * from User where id = #{id} and password=#{password} union select '','','','' from User order by id desc limit 1;")
+    User login(@Param("id") String id, @Param("password") String password);
 
     // 사용자 정보 추가 (id,pw,name,born)
     @Insert("insert into User values(#{user.id}, #{user.password}, #{user.name}, #{user.born})")
