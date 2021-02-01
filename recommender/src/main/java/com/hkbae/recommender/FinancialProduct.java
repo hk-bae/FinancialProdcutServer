@@ -12,6 +12,7 @@ public abstract class FinancialProduct {
 
     BaseInfo baseInfo;
     Option option;
+    private int maturityPayment; // 만기지급액
 
     // 멤버에 대한 getter 메서드
     public BaseInfo getBaseInfo() {
@@ -32,8 +33,15 @@ public abstract class FinancialProduct {
     }
 
     // 월 납입금액 또는 예치금에 대하여 만기 시 만기지급액을 계산하는 메서드
-    public abstract int getMaturityPayment(int amounts);
+    public abstract int calculateMaturityPayment(int amounts);
 
+    public int getMaturityPayment() {
+        return maturityPayment;
+    }
+
+    public void setMaturityPayment(int maturityPayment) {
+        this.maturityPayment = maturityPayment;
+    }
 }
 
 // 상품에 대한 기본정보 클래스
@@ -144,6 +152,7 @@ class BaseInfo {
     public void setMaxLimit(int max_limit) {
         this.max_limit = max_limit;
     }
+
 }
 
 class Option {

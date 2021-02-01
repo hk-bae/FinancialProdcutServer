@@ -8,7 +8,7 @@ public class Deposit extends FinancialProduct {
     }
 
     // 정기예금에 amounts만큼 예치할 때 만기에 얻을 수 있는 만기지급액 계산
-    public int getMaturityPayment(int amounts) {
+    public int calculateMaturityPayment(int amounts) {
 
         int term = option.getSaveTrm(); // 저축기간
         double intrRate = option.getIntrRate(); // 이자율

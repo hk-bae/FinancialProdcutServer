@@ -232,6 +232,8 @@ public class RecommendService {
                                 rsrv_type = option.get("rsrv_type").getAsCharacter();
                                 p = new SavingsData(b, opt, rsrv_type);
                             }
+                            // 만기지급액 계산
+                            p.setMaturityPayment(p.calculateMaturityPayment(userInfo.getAmounts()));
                             // 추천 리스트에 상품 추가
                             recommendedList.add(p);
                         }

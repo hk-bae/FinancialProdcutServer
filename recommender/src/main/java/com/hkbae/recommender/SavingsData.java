@@ -19,7 +19,7 @@ public class SavingsData extends FinancialProduct {
     }
 
     // 적금에 amounts만큼 납입할 때 만기에 얻을 수 있는 만기지급액 계산
-    public int getMaturityPayment(int amounts) {
+    public int calculateMaturityPayment(int amounts) {
 
         int term = option.getSaveTrm(); // 저축기간
         double intrRate = option.getIntrRate(); // 이자율
