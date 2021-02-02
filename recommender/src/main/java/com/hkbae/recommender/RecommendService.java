@@ -192,13 +192,13 @@ public class RecommendService {
 
                             // Option 객체 생성, set value
                             Option opt = new Option();
-                            opt.setDclsMonth(dcls_month);
-                            opt.setFinCoNo(fin_co_no);
-                            opt.setFinPrdtCd(fin_prdt_cd);
-                            opt.setSaveTrm(save_trm);
-                            opt.setIntrRateType(intr_rate_type);
-                            opt.setIntrRate(intr_rate);
-                            opt.setIntrRate2(intr_rate2);
+                            opt.setDcls_month(dcls_month);
+                            opt.setFin_co_no(fin_co_no);
+                            opt.setFin_prdt_cd(fin_prdt_cd);
+                            opt.setSave_trm(save_trm);
+                            opt.setIntr_rate_type(intr_rate_type);
+                            opt.setIntr_rate(intr_rate);
+                            opt.setIntr_rate2(intr_rate2);
 
                             // BaseInfo 객체를 생성하기 위해 필요한 정보들 가져오기
                             String kor_co_nm = baseInfo.get("kor_co_nm").getAsString(); // 금융회사명
@@ -209,16 +209,16 @@ public class RecommendService {
 
                             // BaseInfo 객체 생성, set value
                             BaseInfo b = new BaseInfo();
-                            b.setDclsMonth(dcls_month);
-                            b.setFinCoNo(fin_co_no);
-                            b.setFinPrdtCd(fin_prdt_cd);
-                            b.setKorCoNm(kor_co_nm);
-                            b.setFinPrdtNm(fin_prdt_nm);
-                            b.setJoinWay(join_way);
-                            b.setJoinMember(join_member);
-                            b.setEtcNote(etc_note);
-                            b.setSpclCnd(spcl_cnd);
-                            b.setMaxLimit(max_limit);
+                            b.setDcls_month(dcls_month);
+                            b.setFin_co_no(fin_co_no);
+                            b.setFin_prdt_cd(fin_prdt_cd);
+                            b.setKor_co_nm(kor_co_nm);
+                            b.setFin_prdt_nm(fin_prdt_nm);
+                            b.setJoin_way(join_way);
+                            b.setJoin_member(join_member);
+                            b.setEtc_note(etc_note);
+                            b.setSpcl_cnd(spcl_cnd);
+                            b.setMax_limit(max_limit);
 
                             char rsrv_type;// 적립 유형[S:정액적립식, F:자유적립식] 적금인 경우에 데이터를 받아온다.
                             FinancialProduct p;

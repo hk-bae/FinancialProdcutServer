@@ -63,94 +63,92 @@ class BaseInfo {
     private String etc_note; // 기타유의사항
     private int max_limit; // 최고한도
 
-    // getter 메서드
-    public String getDclsMonth() {
+    public String getDcls_month() {
         return dcls_month;
     }
 
-    public String getFinCoNo() {
-        return fin_co_no;
-    }
-
-    public String getFinPrdtCd() {
-        return fin_prdt_cd;
-    }
-
-    public String getKorCoNm() {
-        return kor_co_nm;
-    }
-
-    public String getFinPrdtNm() {
-        return fin_prdt_nm;
-    }
-
-    public int getJoinDeny() {
-        return join_deny;
-    }
-
-    public String getJoinWay() {
-        return join_way;
-    }
-
-    public String getSpclCnd() {
-        return spcl_cnd;
-    }
-
-    public String getJoinMember() {
-        return join_member;
-    }
-
-    public String getEtcNote() {
-        return etc_note;
-    }
-
-    public int getMaxLimit() {
+    public int getMax_limit() {
         return max_limit;
     }
 
-    // setter 메서드
-    public void setDclsMonth(String dcls_month) {
-        this.dcls_month = dcls_month;
+    public void setMax_limit(int max_limit) {
+        this.max_limit = max_limit;
     }
 
-    public void setFinCoNo(String fin_co_no) {
-        this.fin_co_no = fin_co_no;
+    public String getEtc_note() {
+        return etc_note;
     }
 
-    public void setFinPrdtCd(String fin_prdt_cd) {
-        this.fin_prdt_cd = fin_prdt_cd;
-    }
-
-    public void setKorCoNm(String kor_co_nm) {
-        this.kor_co_nm = kor_co_nm;
-    }
-
-    public void setFinPrdtNm(String fin_prdt_nm) {
-        this.fin_prdt_nm = fin_prdt_nm;
-    }
-
-    public void setJoinDeny(int join_deny) {
-        this.join_deny = join_deny;
-    }
-
-    public void setJoinWay(String join_way) {
-        this.join_way = join_way;
-    }
-
-    public void setSpclCnd(String spcl_cnd) {
-        this.spcl_cnd = spcl_cnd;
-    }
-
-    public void setJoinMember(String join_member) {
-        this.join_member = join_member;
-    }
-
-    public void setEtcNote(String etc_note) {
+    public void setEtc_note(String etc_note) {
         this.etc_note = etc_note;
     }
 
-    public void setMaxLimit(int max_limit) {
-        this.max_limit = max_limit;
+    public String getJoin_member() {
+        return join_member;
+    }
+
+    public void setJoin_member(String join_member) {
+        this.join_member = join_member;
+    }
+
+    public String getSpcl_cnd() {
+        return spcl_cnd;
+    }
+
+    public void setSpcl_cnd(String spcl_cnd) {
+        this.spcl_cnd = spcl_cnd;
+    }
+
+    public String getJoin_way() {
+        return join_way;
+    }
+
+    public void setJoin_way(String join_way) {
+        this.join_way = join_way;
+    }
+
+    public int getJoin_deny() {
+        return join_deny;
+    }
+
+    public void setJoin_deny(int join_deny) {
+        this.join_deny = join_deny;
+    }
+
+    public String getFin_prdt_nm() {
+        return fin_prdt_nm;
+    }
+
+    public void setFin_prdt_nm(String fin_prdt_nm) {
+        this.fin_prdt_nm = fin_prdt_nm;
+    }
+
+    public String getKor_co_nm() {
+        return kor_co_nm;
+    }
+
+    public void setKor_co_nm(String kor_co_nm) {
+        this.kor_co_nm = kor_co_nm;
+    }
+
+    public String getFin_prdt_cd() {
+        return fin_prdt_cd;
+    }
+
+    public void setFin_prdt_cd(String fin_prdt_cd) {
+        this.fin_prdt_cd = fin_prdt_cd;
+    }
+
+    public String getFin_co_no() {
+        return fin_co_no;
+    }
+
+    public void setFin_co_no(String fin_co_no) {
+        this.fin_co_no = fin_co_no;
+    }
+
+    public void setDcls_month(String dcls_month) {
+        this.dcls_month = dcls_month;
     }
 
 }
@@ -166,62 +164,60 @@ class Option {
     private double intr_rate; // 저축금리[소수점 2자리]
     private double intr_rate2; // 최고 우대금리[소수점 2자리]
 
-    // getter메서드
-    public String getDclsMonth() {
+    public String getDcls_month() {
         return dcls_month;
     }
 
-    public String getFinCoNo() {
-        return fin_co_no;
-    }
-
-    public String getFinPrdtCd() {
-        return fin_prdt_cd;
-    }
-
-    public char getIntrRateType() {
-        return intr_rate_type;
-    }
-
-    public int getSaveTrm() {
-        return save_trm;
-    }
-
-    public double getIntrRate() {
-        return intr_rate;
-    }
-
-    public double getIntrRate2() {
+    public double getIntr_rate2() {
         return intr_rate2;
     }
 
-    // setter메서드
-
-    public void setDclsMonth(String dcls_month) {
-        this.dcls_month = dcls_month;
+    public void setIntr_rate2(double intr_rate2) {
+        this.intr_rate2 = intr_rate2;
     }
 
-    public void setFinCoNo(String fin_co_no) {
-        this.fin_co_no = fin_co_no;
+    public double getIntr_rate() {
+        return intr_rate;
     }
 
-    public void setFinPrdtCd(String fin_prdt_cd) {
-        this.fin_prdt_cd = fin_prdt_cd;
-    }
-
-    public void setIntrRateType(char intr_rate_type) {
-        this.intr_rate_type = intr_rate_type;
-    }
-
-    public void setSaveTrm(int save_trm) {
-        this.save_trm = save_trm;
-    }
-
-    public void setIntrRate(double intr_rate) {
+    public void setIntr_rate(double intr_rate) {
         this.intr_rate = intr_rate;
     }
 
-    public void setIntrRate2(double intr_rate2) {
-        this.intr_rate2 = intr_rate2;
+    public int getSave_trm() {
+        return save_trm;
     }
+
+    public void setSave_trm(int save_trm) {
+        this.save_trm = save_trm;
+    }
+
+    public char getIntr_rate_type() {
+        return intr_rate_type;
+    }
+
+    public void setIntr_rate_type(char intr_rate_type) {
+        this.intr_rate_type = intr_rate_type;
+    }
+
+    public String getFin_prdt_cd() {
+        return fin_prdt_cd;
+    }
+
+    public void setFin_prdt_cd(String fin_prdt_cd) {
+        this.fin_prdt_cd = fin_prdt_cd;
+    }
+
+    public String getFin_co_no() {
+        return fin_co_no;
+    }
+
+    public void setFin_co_no(String fin_co_no) {
+        this.fin_co_no = fin_co_no;
+    }
+
+    public void setDcls_month(String dcls_month) {
+        this.dcls_month = dcls_month;
+    }
+
 }
